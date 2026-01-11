@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏆 Portfolio Competition - Live Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2em; opacity: 0.9; margin-top: 5px; }
+        .update-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 15px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+        .auto-badge {
+            background: #51cf66;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 15px;
+            margin: 10px;
+            display: inline-block;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .leaderboard {
+            background: #f8f9fa;
+            padding: 30px;
+        }
+        .leaderboard h2 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .leader-row {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .leader-row.first {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .rank {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+            width: 40px;
+        }
+        .positive { color: #28a745; }
+        .negative { color: #dc3545; }
+        .bot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            padding: 30px;
+        }
+        .bot-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 3px solid #667eea;
+        }
+        .bot-card.winning {
+            border-color: #51cf66;
+            background: #f0fff4;
+        }
+        .bot-header {
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .bot-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .bot-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .bot-stats {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 0.95em;
+        }
+        .trade-log {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        .trade-entry {
+            background: white;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+            font-size: 0.85em;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        @media (max-width: 1200px) {
+            .bot-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏆 5-WAY PORTFOLIO COMPETITION</h1>
+            <div class="subtitle">Autonomous AI Trading Lab • Real Market Data</div>
+            <div class="auto-badge">🤖 FULLY AUTONOMOUS</div>
+            <div class="update-badge">
+                📊 Last Updated: January 11, 2026 at 08:44 AM EST
+            </div>
+            <p style="margin-top: 15px; font-size: 0.9em;">Updates automatically daily at 4:05 PM EST</p>
+        </div>
+        
+        <div class="leaderboard">
+            <h2>🏆 CURRENT STANDINGS</h2>
+
+            <div class="leader-row first">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="rank">1.</div>
+                    <div>👤 CERI (Buy & Hold) 🏆</div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 1.5em; font-weight: bold;">$99,896</div>
+                    <div class="negative" style="font-size: 1.1em;">
+                        $-104 (-0.10%)
+                    </div>
+                </div>
+            </div>
+
+            <div class="leader-row ">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="rank">2.</div>
+                    <div>💡 AI-Assisted </div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 1.5em; font-weight: bold;">$99,896</div>
+                    <div class="negative" style="font-size: 1.1em;">
+                        $-104 (-0.10%)
+                    </div>
+                </div>
+            </div>
+
+            <div class="leader-row ">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="rank">3.</div>
+                    <div>🐢 Conservative Bot </div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 1.5em; font-weight: bold;">$99,218</div>
+                    <div class="negative" style="font-size: 1.1em;">
+                        $-782 (-0.78%)
+                    </div>
+                </div>
+            </div>
+
+            <div class="leader-row ">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="rank">4.</div>
+                    <div>🏃 Moderate Bot </div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 1.5em; font-weight: bold;">$99,218</div>
+                    <div class="negative" style="font-size: 1.1em;">
+                        $-782 (-0.78%)
+                    </div>
+                </div>
+            </div>
+
+            <div class="leader-row ">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="rank">5.</div>
+                    <div>🚀 Aggressive Bot </div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 1.5em; font-weight: bold;">$99,218</div>
+                    <div class="negative" style="font-size: 1.1em;">
+                        $-782 (-0.78%)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="bot-grid">
+
+            <div class="bot-card winning">
+                <div class="bot-header">
+                    <div class="bot-title">👤 CERI (Buy & Hold)</div>
+                </div>
+                <div class="bot-value">$99,896</div>
+                <div style="font-size: 1.3em; font-weight: bold; margin-bottom: 15px;" class="negative">
+                    $-104 (-0.10%)
+                </div>
+                
+                <div class="bot-stats">
+                    <div class="stat-row">
+                        <span>Started:</span>
+                        <span><strong>2026-01-03</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Holdings:</span>
+                        <span><strong>10 stocks</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Strategy:</span>
+                        <span><strong>Quarterly rebalance only</strong></span>
+                    </div>
+                </div>
+            
+                
+            </div>
+
+            <div class="bot-card ">
+                <div class="bot-header">
+                    <div class="bot-title">💡 AI-Assisted</div>
+                </div>
+                <div class="bot-value">$99,896</div>
+                <div style="font-size: 1.3em; font-weight: bold; margin-bottom: 15px;" class="negative">
+                    $-104 (-0.10%)
+                </div>
+                
+                <div class="bot-stats">
+                    <div class="stat-row">
+                        <span>Started:</span>
+                        <span><strong>2026-01-10</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Holdings:</span>
+                        <span><strong>10 stocks</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Strategy:</span>
+                        <span><strong>Claude recommends, you decide</strong></span>
+                    </div>
+                </div>
+            
+                
+            </div>
+
+            <div class="bot-card ">
+                <div class="bot-header">
+                    <div class="bot-title">🐢 Conservative Bot</div>
+                </div>
+                <div class="bot-value">$99,218</div>
+                <div style="font-size: 1.3em; font-weight: bold; margin-bottom: 15px;" class="negative">
+                    $-782 (-0.78%)
+                </div>
+                
+                <div class="bot-stats">
+                    <div class="stat-row">
+                        <span>Win Rate:</span>
+                        <span><strong>0% (0/0)</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Total Trades:</span>
+                        <span><strong>0</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Strategy:</span>
+                        <span><strong>Sell at -10%</strong></span>
+                    </div>
+                </div>
+            
+                <div class="trade-log" style="text-align: center; color: #6c757d; padding: 20px;">No trades yet • Bot monitoring markets daily</div>
+            </div>
+
+            <div class="bot-card ">
+                <div class="bot-header">
+                    <div class="bot-title">🏃 Moderate Bot</div>
+                </div>
+                <div class="bot-value">$99,218</div>
+                <div style="font-size: 1.3em; font-weight: bold; margin-bottom: 15px;" class="negative">
+                    $-782 (-0.78%)
+                </div>
+                
+                <div class="bot-stats">
+                    <div class="stat-row">
+                        <span>Win Rate:</span>
+                        <span><strong>0% (0/0)</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Total Trades:</span>
+                        <span><strong>0</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Strategy:</span>
+                        <span><strong>Sell at -7%</strong></span>
+                    </div>
+                </div>
+            
+                <div class="trade-log" style="text-align: center; color: #6c757d; padding: 20px;">No trades yet • Bot monitoring markets daily</div>
+            </div>
+
+            <div class="bot-card ">
+                <div class="bot-header">
+                    <div class="bot-title">🚀 Aggressive Bot</div>
+                </div>
+                <div class="bot-value">$99,218</div>
+                <div style="font-size: 1.3em; font-weight: bold; margin-bottom: 15px;" class="negative">
+                    $-782 (-0.78%)
+                </div>
+                
+                <div class="bot-stats">
+                    <div class="stat-row">
+                        <span>Win Rate:</span>
+                        <span><strong>0% (0/0)</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Total Trades:</span>
+                        <span><strong>0</strong></span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Strategy:</span>
+                        <span><strong>Sell at -5%</strong></span>
+                    </div>
+                </div>
+            
+                <div class="trade-log" style="text-align: center; color: #6c757d; padding: 20px;">No trades yet • Bot monitoring markets daily</div>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p><strong>🤖 Fully Autonomous Trading Lab</strong></p>
+            <p style="margin-top: 10px;">Updates automatically daily at 4:05 PM EST via GitHub Actions</p>
+            <p style="margin-top: 5px; font-size: 0.9em;">Competition started January 2026 • Ends January 2027</p>
+        </div>
+    </div>
+</body>
+</html>

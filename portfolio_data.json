@@ -1,0 +1,312 @@
+{
+  "ceri": {
+    "name": "CERI (Buy & Hold)",
+    "emoji": "\ud83d\udc64",
+    "initial": 100000,
+    "startDate": "2026-01-03",
+    "strategy": "Quarterly rebalance only",
+    "holdings": [
+      {
+        "ticker": "AVGO",
+        "entry": 346.35,
+        "shares": 28.86
+      },
+      {
+        "ticker": "NVDA",
+        "entry": 185.89,
+        "shares": 53.8
+      },
+      {
+        "ticker": "WMT",
+        "entry": 114.94,
+        "shares": 87
+      },
+      {
+        "ticker": "IBKR",
+        "entry": 70.21,
+        "shares": 142.4
+      },
+      {
+        "ticker": "ORCL",
+        "entry": 199.78,
+        "shares": 50.04
+      },
+      {
+        "ticker": "UNH",
+        "entry": 345.57,
+        "shares": 28.93
+      },
+      {
+        "ticker": "NEM",
+        "entry": 108.58,
+        "shares": 92.08
+      },
+      {
+        "ticker": "TGT",
+        "entry": 105.3,
+        "shares": 94.95
+      },
+      {
+        "ticker": "PYPL",
+        "entry": 57.5,
+        "shares": 173.94
+      },
+      {
+        "ticker": "MO",
+        "entry": 57.38,
+        "shares": 174.27
+      }
+    ]
+  },
+  "assisted": {
+    "name": "AI-Assisted",
+    "emoji": "\ud83d\udca1",
+    "initial": 100000,
+    "startDate": "2026-01-10",
+    "strategy": "Claude recommends, you decide",
+    "holdings": [
+      {
+        "ticker": "AVGO",
+        "entry": 346.35,
+        "shares": 28.86
+      },
+      {
+        "ticker": "NVDA",
+        "entry": 185.89,
+        "shares": 53.8
+      },
+      {
+        "ticker": "WMT",
+        "entry": 114.94,
+        "shares": 87
+      },
+      {
+        "ticker": "IBKR",
+        "entry": 70.21,
+        "shares": 142.4
+      },
+      {
+        "ticker": "ORCL",
+        "entry": 199.78,
+        "shares": 50.04
+      },
+      {
+        "ticker": "UNH",
+        "entry": 345.57,
+        "shares": 28.93
+      },
+      {
+        "ticker": "NEM",
+        "entry": 108.58,
+        "shares": 92.08
+      },
+      {
+        "ticker": "TGT",
+        "entry": 105.3,
+        "shares": 94.95
+      },
+      {
+        "ticker": "PYPL",
+        "entry": 57.5,
+        "shares": 173.94
+      },
+      {
+        "ticker": "MO",
+        "entry": 57.38,
+        "shares": 174.27
+      }
+    ]
+  },
+  "conservative": {
+    "name": "Conservative Bot",
+    "emoji": "\ud83d\udc22",
+    "initial": 100000,
+    "startDate": "2026-01-11",
+    "sellThreshold": -10,
+    "strategy": "Sell at -10%",
+    "holdings": [
+      {
+        "ticker": "AVGO",
+        "entry": 344.97,
+        "shares": 28
+      },
+      {
+        "ticker": "PM",
+        "entry": 162.61,
+        "shares": 61
+      },
+      {
+        "ticker": "JPM",
+        "entry": 329.19,
+        "shares": 30
+      },
+      {
+        "ticker": "WFC",
+        "entry": 95.95,
+        "shares": 104
+      },
+      {
+        "ticker": "NVDA",
+        "entry": 184.86,
+        "shares": 54
+      },
+      {
+        "ticker": "COP",
+        "entry": 97.51,
+        "shares": 102
+      },
+      {
+        "ticker": "PFE",
+        "entry": 25.48,
+        "shares": 392
+      },
+      {
+        "ticker": "TGT",
+        "entry": 105.52,
+        "shares": 94
+      },
+      {
+        "ticker": "MO",
+        "entry": 57.53,
+        "shares": 173
+      },
+      {
+        "ticker": "BAC",
+        "entry": 55.85,
+        "shares": 179
+      }
+    ],
+    "trades": [],
+    "wins": 0,
+    "losses": 0,
+    "resets": 0
+  },
+  "moderate": {
+    "name": "Moderate Bot",
+    "emoji": "\ud83c\udfc3",
+    "initial": 100000,
+    "startDate": "2026-01-11",
+    "sellThreshold": -7,
+    "strategy": "Sell at -7%",
+    "holdings": [
+      {
+        "ticker": "AVGO",
+        "entry": 344.97,
+        "shares": 28
+      },
+      {
+        "ticker": "PM",
+        "entry": 162.61,
+        "shares": 61
+      },
+      {
+        "ticker": "JPM",
+        "entry": 329.19,
+        "shares": 30
+      },
+      {
+        "ticker": "WFC",
+        "entry": 95.95,
+        "shares": 104
+      },
+      {
+        "ticker": "NVDA",
+        "entry": 184.86,
+        "shares": 54
+      },
+      {
+        "ticker": "COP",
+        "entry": 97.51,
+        "shares": 102
+      },
+      {
+        "ticker": "PFE",
+        "entry": 25.48,
+        "shares": 392
+      },
+      {
+        "ticker": "TGT",
+        "entry": 105.52,
+        "shares": 94
+      },
+      {
+        "ticker": "MO",
+        "entry": 57.53,
+        "shares": 173
+      },
+      {
+        "ticker": "BAC",
+        "entry": 55.85,
+        "shares": 179
+      }
+    ],
+    "trades": [],
+    "wins": 0,
+    "losses": 0,
+    "resets": 0
+  },
+  "aggressive": {
+    "name": "Aggressive Bot",
+    "emoji": "\ud83d\ude80",
+    "initial": 100000,
+    "startDate": "2026-01-11",
+    "sellThreshold": -5,
+    "strategy": "Sell at -5%",
+    "holdings": [
+      {
+        "ticker": "AVGO",
+        "entry": 344.97,
+        "shares": 28
+      },
+      {
+        "ticker": "PM",
+        "entry": 162.61,
+        "shares": 61
+      },
+      {
+        "ticker": "JPM",
+        "entry": 329.19,
+        "shares": 30
+      },
+      {
+        "ticker": "WFC",
+        "entry": 95.95,
+        "shares": 104
+      },
+      {
+        "ticker": "NVDA",
+        "entry": 184.86,
+        "shares": 54
+      },
+      {
+        "ticker": "COP",
+        "entry": 97.51,
+        "shares": 102
+      },
+      {
+        "ticker": "PFE",
+        "entry": 25.48,
+        "shares": 392
+      },
+      {
+        "ticker": "TGT",
+        "entry": 105.52,
+        "shares": 94
+      },
+      {
+        "ticker": "MO",
+        "entry": 57.53,
+        "shares": 173
+      },
+      {
+        "ticker": "BAC",
+        "entry": 55.85,
+        "shares": 179
+      }
+    ],
+    "trades": [],
+    "wins": 0,
+    "losses": 0,
+    "resets": 0
+  }
+}
