@@ -269,9 +269,9 @@
         "shares": 38
       },
       {
-        "ticker": "WFC",
-        "entry": 95.95,
-        "shares": 104
+        "ticker": "AMZN",
+        "entry": 236.65,
+        "shares": 39
       },
       {
         "ticker": "NVDA",
@@ -317,10 +317,23 @@
         "boughtShares": 38,
         "reason": "JPM down -5.56% (trigger: -5%)",
         "profitLoss": -548.7
+      },
+      {
+        "date": "2026-01-14T21:45:53.505353",
+        "dateString": "2026-01-14 21:45:53",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "WFC",
+        "soldPrice": 89.25,
+        "soldShares": 104,
+        "boughtTicker": "AMZN",
+        "boughtPrice": 236.65,
+        "boughtShares": 39,
+        "reason": "WFC down -6.98% (trigger: -5%)",
+        "profitLoss": -696.8
       }
     ],
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "resets": 0
   }
 }
