@@ -205,9 +205,9 @@
         "shares": 30
       },
       {
-        "ticker": "WFC",
-        "entry": 95.95,
-        "shares": 104
+        "ticker": "GOOGL",
+        "entry": 332.78,
+        "shares": 27
       },
       {
         "ticker": "NVDA",
@@ -240,9 +240,23 @@
         "shares": 179
       }
     ],
-    "trades": [],
+    "trades": [
+      {
+        "date": "2026-01-15T21:43:56.245867",
+        "dateString": "2026-01-15 21:43:56",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "WFC",
+        "soldPrice": 88.96,
+        "soldShares": 104,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 332.78,
+        "boughtShares": 27,
+        "reason": "WFC down -7.29% (trigger: -7%)",
+        "profitLoss": -726.96
+      }
+    ],
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "resets": 0
   },
   "aggressive": {
@@ -299,9 +313,9 @@
         "shares": 173
       },
       {
-        "ticker": "BAC",
-        "entry": 55.85,
-        "shares": 179
+        "ticker": "MSFT",
+        "entry": 456.66,
+        "shares": 20
       }
     ],
     "trades": [
@@ -330,10 +344,23 @@
         "boughtShares": 39,
         "reason": "WFC down -6.98% (trigger: -5%)",
         "profitLoss": -696.8
+      },
+      {
+        "date": "2026-01-15T21:43:56.245929",
+        "dateString": "2026-01-15 21:43:56",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "BAC",
+        "soldPrice": 52.59,
+        "soldShares": 179,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 456.66,
+        "boughtShares": 20,
+        "reason": "BAC down -5.84% (trigger: -5%)",
+        "profitLoss": -583.54
       }
     ],
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "resets": 0
   }
 }
