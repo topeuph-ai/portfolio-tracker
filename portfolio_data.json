@@ -200,9 +200,9 @@
         "shares": 61
       },
       {
-        "ticker": "JPM",
-        "entry": 329.19,
-        "shares": 30
+        "ticker": "MSFT",
+        "entry": 454.52,
+        "shares": 19
       },
       {
         "ticker": "GOOGL",
@@ -253,10 +253,23 @@
         "boughtShares": 27,
         "reason": "WFC down -7.29% (trigger: -7%)",
         "profitLoss": -726.96
+      },
+      {
+        "date": "2026-01-20T21:43:01.244669",
+        "dateString": "2026-01-20 21:43:01",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "JPM",
+        "soldPrice": 302.74,
+        "soldShares": 30,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 454.52,
+        "boughtShares": 19,
+        "reason": "JPM down -8.03% (trigger: -7%)",
+        "profitLoss": -793.5
       }
     ],
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "resets": 0
   },
   "aggressive": {
