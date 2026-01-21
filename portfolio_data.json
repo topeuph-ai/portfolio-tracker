@@ -141,9 +141,9 @@
         "shares": 30
       },
       {
-        "ticker": "WFC",
-        "entry": 95.95,
-        "shares": 104
+        "ticker": "META",
+        "entry": 612.96,
+        "shares": 14
       },
       {
         "ticker": "NVDA",
@@ -176,9 +176,23 @@
         "shares": 179
       }
     ],
-    "trades": [],
+    "trades": [
+      {
+        "date": "2026-01-21T21:54:46.741867",
+        "dateString": "2026-01-21 21:54:46",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "WFC",
+        "soldPrice": 86.12,
+        "soldShares": 104,
+        "boughtTicker": "META",
+        "boughtPrice": 612.96,
+        "boughtShares": 14,
+        "reason": "WFC down -10.24% (trigger: -10%)",
+        "profitLoss": -1022.32
+      }
+    ],
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "resets": 0
   },
   "moderate": {
