@@ -295,9 +295,9 @@
     "strategy": "Sell at -5%",
     "holdings": [
       {
-        "ticker": "AVGO",
-        "entry": 344.97,
-        "shares": 28
+        "ticker": "GOOGL",
+        "entry": 330.54,
+        "shares": 27
       },
       {
         "ticker": "PM",
@@ -384,10 +384,23 @@
         "boughtShares": 20,
         "reason": "BAC down -5.84% (trigger: -5%)",
         "profitLoss": -583.54
+      },
+      {
+        "date": "2026-01-22T21:49:26.829017",
+        "dateString": "2026-01-22 21:49:26",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "AVGO",
+        "soldPrice": 325.49,
+        "soldShares": 28,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 330.54,
+        "boughtShares": 27,
+        "reason": "AVGO down -5.65% (trigger: -5%)",
+        "profitLoss": -545.44
       }
     ],
     "wins": 0,
-    "losses": 3,
+    "losses": 4,
     "resets": 0
   }
 }
