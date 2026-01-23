@@ -204,9 +204,9 @@
     "strategy": "Sell at -7%",
     "holdings": [
       {
-        "ticker": "AVGO",
-        "entry": 344.97,
-        "shares": 28
+        "ticker": "META",
+        "entry": 658.76,
+        "shares": 13
       },
       {
         "ticker": "PM",
@@ -280,10 +280,23 @@
         "boughtShares": 19,
         "reason": "JPM down -8.03% (trigger: -7%)",
         "profitLoss": -793.5
+      },
+      {
+        "date": "2026-01-23T21:43:15.057309",
+        "dateString": "2026-01-23 21:43:15",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "AVGO",
+        "soldPrice": 320.05,
+        "soldShares": 28,
+        "boughtTicker": "META",
+        "boughtPrice": 658.76,
+        "boughtShares": 13,
+        "reason": "AVGO down -7.22% (trigger: -7%)",
+        "profitLoss": -697.76
       }
     ],
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "resets": 0
   },
   "aggressive": {
