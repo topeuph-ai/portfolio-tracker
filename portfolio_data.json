@@ -249,9 +249,9 @@
         "shares": 173
       },
       {
-        "ticker": "BAC",
-        "entry": 55.85,
-        "shares": 179
+        "ticker": "AAPL",
+        "entry": 248.04,
+        "shares": 37
       }
     ],
     "trades": [
@@ -293,10 +293,23 @@
         "boughtShares": 13,
         "reason": "AVGO down -7.22% (trigger: -7%)",
         "profitLoss": -697.76
+      },
+      {
+        "date": "2026-01-24T21:34:38.402378",
+        "dateString": "2026-01-24 21:34:38",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "BAC",
+        "soldPrice": 51.72,
+        "soldShares": 179,
+        "boughtTicker": "AAPL",
+        "boughtPrice": 248.04,
+        "boughtShares": 37,
+        "reason": "BAC down -7.39% (trigger: -7%)",
+        "profitLoss": -739.27
       }
     ],
     "wins": 0,
-    "losses": 3,
+    "losses": 4,
     "resets": 0
   },
   "aggressive": {
