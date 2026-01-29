@@ -366,9 +366,9 @@
         "shares": 173
       },
       {
-        "ticker": "MSFT",
-        "entry": 456.66,
-        "shares": 20
+        "ticker": "GOOGL",
+        "entry": 338.25,
+        "shares": 25
       }
     ],
     "trades": [
@@ -423,10 +423,23 @@
         "boughtShares": 27,
         "reason": "AVGO down -5.65% (trigger: -5%)",
         "profitLoss": -545.44
+      },
+      {
+        "date": "2026-01-29T21:56:29.988077",
+        "dateString": "2026-01-29 21:56:29",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "MSFT",
+        "soldPrice": 433.5,
+        "soldShares": 20,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 338.25,
+        "boughtShares": 25,
+        "reason": "MSFT down -5.07% (trigger: -5%)",
+        "profitLoss": -463.2
       }
     ],
     "wins": 0,
-    "losses": 4,
+    "losses": 5,
     "resets": 0
   }
 }
