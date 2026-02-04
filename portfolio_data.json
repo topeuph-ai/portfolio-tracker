@@ -126,9 +126,9 @@
     "strategy": "Sell at -10%",
     "holdings": [
       {
-        "ticker": "AVGO",
-        "entry": 344.97,
-        "shares": 28
+        "ticker": "GOOGL",
+        "entry": 333.04,
+        "shares": 25
       },
       {
         "ticker": "PM",
@@ -189,10 +189,23 @@
         "boughtShares": 14,
         "reason": "WFC down -10.24% (trigger: -10%)",
         "profitLoss": -1022.32
+      },
+      {
+        "date": "2026-02-04T21:56:28.929575",
+        "dateString": "2026-02-04 21:56:28",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "AVGO",
+        "soldPrice": 308.05,
+        "soldShares": 28,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 333.04,
+        "boughtShares": 25,
+        "reason": "AVGO down -10.70% (trigger: -10%)",
+        "profitLoss": -1033.76
       }
     ],
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "resets": 0
   },
   "moderate": {
@@ -354,9 +367,9 @@
         "shares": 39
       },
       {
-        "ticker": "NVDA",
-        "entry": 184.86,
-        "shares": 54
+        "ticker": "MSFT",
+        "entry": 414.19,
+        "shares": 22
       },
       {
         "ticker": "COP",
@@ -449,10 +462,23 @@
         "boughtShares": 25,
         "reason": "MSFT down -5.07% (trigger: -5%)",
         "profitLoss": -463.2
+      },
+      {
+        "date": "2026-02-04T21:56:28.929644",
+        "dateString": "2026-02-04 21:56:28",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "NVDA",
+        "soldPrice": 174.19,
+        "soldShares": 54,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 414.19,
+        "boughtShares": 22,
+        "reason": "NVDA down -5.77% (trigger: -5%)",
+        "profitLoss": -576.18
       }
     ],
     "wins": 0,
-    "losses": 5,
+    "losses": 6,
     "resets": 0
   }
 }
