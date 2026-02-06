@@ -227,9 +227,9 @@
         "shares": 61
       },
       {
-        "ticker": "AMZN",
-        "entry": 238.62,
-        "shares": 32
+        "ticker": "GOOGL",
+        "entry": 322.86,
+        "shares": 20
       },
       {
         "ticker": "GOOGL",
@@ -345,10 +345,23 @@
         "boughtShares": 28,
         "reason": "NVDA down -7.02% (trigger: -7%)",
         "profitLoss": -700.92
+      },
+      {
+        "date": "2026-02-06T21:55:57.650705",
+        "dateString": "2026-02-06 21:55:57",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "AMZN",
+        "soldPrice": 210.32,
+        "soldShares": 32,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 322.86,
+        "boughtShares": 20,
+        "reason": "AMZN down -11.86% (trigger: -7%)",
+        "profitLoss": -905.6
       }
     ],
     "wins": 0,
-    "losses": 6,
+    "losses": 7,
     "resets": 0
   },
   "aggressive": {
@@ -375,9 +388,9 @@
         "shares": 30
       },
       {
-        "ticker": "AMZN",
-        "entry": 236.65,
-        "shares": 39
+        "ticker": "MSFT",
+        "entry": 401.14,
+        "shares": 20
       },
       {
         "ticker": "MSFT",
@@ -501,10 +514,23 @@
         "boughtShares": 30,
         "reason": "AMZN down -8.21% (trigger: -5%)",
         "profitLoss": -756.58
+      },
+      {
+        "date": "2026-02-06T21:55:57.650809",
+        "dateString": "2026-02-06 21:55:57",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "AMZN",
+        "soldPrice": 210.32,
+        "soldShares": 39,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 401.14,
+        "boughtShares": 20,
+        "reason": "AMZN down -11.13% (trigger: -5%)",
+        "profitLoss": -1026.87
       }
     ],
     "wins": 0,
-    "losses": 7,
+    "losses": 8,
     "resets": 0
   }
 }
