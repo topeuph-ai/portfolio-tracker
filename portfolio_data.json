@@ -373,9 +373,9 @@
     "strategy": "Sell at -5%",
     "holdings": [
       {
-        "ticker": "GOOGL",
-        "entry": 330.54,
-        "shares": 27
+        "ticker": "AAPL",
+        "entry": 275.5,
+        "shares": 30
       },
       {
         "ticker": "PM",
@@ -540,10 +540,23 @@
         "boughtShares": 19,
         "reason": "GOOGL down -5.82% (trigger: -5%)",
         "profitLoss": -491.75
+      },
+      {
+        "date": "2026-02-11T21:46:18.286728",
+        "dateString": "2026-02-11 21:46:18",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "GOOGL",
+        "soldPrice": 310.96,
+        "soldShares": 27,
+        "boughtTicker": "AAPL",
+        "boughtPrice": 275.5,
+        "boughtShares": 30,
+        "reason": "GOOGL down -5.92% (trigger: -5%)",
+        "profitLoss": -528.66
       }
     ],
     "wins": 0,
-    "losses": 9,
+    "losses": 10,
     "resets": 0
   }
 }
