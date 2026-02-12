@@ -232,9 +232,9 @@
         "shares": 20
       },
       {
-        "ticker": "GOOGL",
-        "entry": 332.78,
-        "shares": 27
+        "ticker": "META",
+        "entry": 649.81,
+        "shares": 12
       },
       {
         "ticker": "GOOGL",
@@ -358,10 +358,23 @@
         "boughtShares": 20,
         "reason": "AMZN down -11.86% (trigger: -7%)",
         "profitLoss": -905.6
+      },
+      {
+        "date": "2026-02-12T21:47:40.293190",
+        "dateString": "2026-02-12 21:47:40",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "GOOGL",
+        "soldPrice": 309.0,
+        "soldShares": 27,
+        "boughtTicker": "META",
+        "boughtPrice": 649.81,
+        "boughtShares": 12,
+        "reason": "GOOGL down -7.15% (trigger: -7%)",
+        "profitLoss": -642.06
       }
     ],
     "wins": 0,
-    "losses": 7,
+    "losses": 8,
     "resets": 0
   },
   "aggressive": {
@@ -383,9 +396,9 @@
         "shares": 61
       },
       {
-        "ticker": "AAPL",
-        "entry": 275.91,
-        "shares": 30
+        "ticker": "GOOGL",
+        "entry": 309.0,
+        "shares": 25
       },
       {
         "ticker": "MSFT",
@@ -553,10 +566,23 @@
         "boughtShares": 30,
         "reason": "GOOGL down -5.92% (trigger: -5%)",
         "profitLoss": -528.66
+      },
+      {
+        "date": "2026-02-12T21:47:40.293249",
+        "dateString": "2026-02-12 21:47:40",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "AAPL",
+        "soldPrice": 261.73,
+        "soldShares": 30,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 309.0,
+        "boughtShares": 25,
+        "reason": "AAPL down -5.14% (trigger: -5%)",
+        "profitLoss": -425.4
       }
     ],
     "wins": 0,
-    "losses": 10,
+    "losses": 11,
     "resets": 0
   }
 }
