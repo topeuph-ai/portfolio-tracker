@@ -237,9 +237,9 @@
         "shares": 12
       },
       {
-        "ticker": "GOOGL",
-        "entry": 331.25,
-        "shares": 28
+        "ticker": "MSFT",
+        "entry": 401.32,
+        "shares": 21
       },
       {
         "ticker": "COP",
@@ -371,10 +371,23 @@
         "boughtShares": 12,
         "reason": "GOOGL down -7.15% (trigger: -7%)",
         "profitLoss": -642.06
+      },
+      {
+        "date": "2026-02-13T21:49:21.295415",
+        "dateString": "2026-02-13 21:49:21",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "GOOGL",
+        "soldPrice": 305.72,
+        "soldShares": 28,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 401.32,
+        "boughtShares": 21,
+        "reason": "GOOGL down -7.71% (trigger: -7%)",
+        "profitLoss": -714.84
       }
     ],
     "wins": 0,
-    "losses": 8,
+    "losses": 9,
     "resets": 0
   },
   "aggressive": {
@@ -386,9 +399,9 @@
     "strategy": "Sell at -5%",
     "holdings": [
       {
-        "ticker": "AAPL",
-        "entry": 275.5,
-        "shares": 30
+        "ticker": "MSFT",
+        "entry": 401.32,
+        "shares": 19
       },
       {
         "ticker": "PM",
@@ -579,10 +592,23 @@
         "boughtShares": 25,
         "reason": "AAPL down -5.14% (trigger: -5%)",
         "profitLoss": -425.4
+      },
+      {
+        "date": "2026-02-13T21:49:21.295474",
+        "dateString": "2026-02-13 21:49:21",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "AAPL",
+        "soldPrice": 255.78,
+        "soldShares": 30,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 401.32,
+        "boughtShares": 19,
+        "reason": "AAPL down -7.16% (trigger: -5%)",
+        "profitLoss": -591.6
       }
     ],
     "wins": 0,
-    "losses": 11,
+    "losses": 12,
     "resets": 0
   }
 }
