@@ -171,9 +171,9 @@
         "shares": 173
       },
       {
-        "ticker": "BAC",
-        "entry": 55.85,
-        "shares": 179
+        "ticker": "MSFT",
+        "entry": 392.74,
+        "shares": 22
       }
     ],
     "trades": [
@@ -202,10 +202,23 @@
         "boughtShares": 25,
         "reason": "AVGO down -10.70% (trigger: -10%)",
         "profitLoss": -1033.76
+      },
+      {
+        "date": "2026-02-27T21:39:25.318105",
+        "dateString": "2026-02-27 21:39:25",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "BAC",
+        "soldPrice": 49.83,
+        "soldShares": 179,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 392.74,
+        "boughtShares": 22,
+        "reason": "BAC down -10.78% (trigger: -10%)",
+        "profitLoss": -1077.58
       }
     ],
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "resets": 0
   },
   "moderate": {
