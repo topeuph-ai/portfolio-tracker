@@ -136,9 +136,9 @@
         "shares": 61
       },
       {
-        "ticker": "JPM",
-        "entry": 329.19,
-        "shares": 30
+        "ticker": "AMZN",
+        "entry": 218.94,
+        "shares": 40
       },
       {
         "ticker": "META",
@@ -215,10 +215,23 @@
         "boughtShares": 22,
         "reason": "BAC down -10.78% (trigger: -10%)",
         "profitLoss": -1077.58
+      },
+      {
+        "date": "2026-03-05T21:48:46.389197",
+        "dateString": "2026-03-05 21:48:46",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "JPM",
+        "soldPrice": 293.55,
+        "soldShares": 30,
+        "boughtTicker": "AMZN",
+        "boughtPrice": 218.94,
+        "boughtShares": 40,
+        "reason": "JPM down -10.83% (trigger: -10%)",
+        "profitLoss": -1069.2
       }
     ],
     "wins": 0,
-    "losses": 3,
+    "losses": 4,
     "resets": 0
   },
   "moderate": {
