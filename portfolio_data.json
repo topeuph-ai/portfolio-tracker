@@ -271,9 +271,9 @@
         "shares": 23
       },
       {
-        "ticker": "META",
-        "entry": 649.81,
-        "shares": 12
+        "ticker": "AAPL",
+        "entry": 247.99,
+        "shares": 28
       },
       {
         "ticker": "MSFT",
@@ -449,10 +449,23 @@
         "boughtShares": 13,
         "reason": "META down -7.90% (trigger: -7%)",
         "profitLoss": -676.78
+      },
+      {
+        "date": "2026-03-20T21:41:44.951084",
+        "dateString": "2026-03-20 21:41:44",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "META",
+        "soldPrice": 593.66,
+        "soldShares": 12,
+        "boughtTicker": "AAPL",
+        "boughtPrice": 247.99,
+        "boughtShares": 28,
+        "reason": "META down -8.64% (trigger: -7%)",
+        "profitLoss": -673.8
       }
     ],
     "wins": 0,
-    "losses": 11,
+    "losses": 12,
     "resets": 0
   },
   "aggressive": {
