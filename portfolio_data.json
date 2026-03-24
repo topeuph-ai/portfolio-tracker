@@ -276,9 +276,9 @@
         "shares": 28
       },
       {
-        "ticker": "MSFT",
-        "entry": 401.32,
-        "shares": 21
+        "ticker": "GOOGL",
+        "entry": 290.44,
+        "shares": 26
       },
       {
         "ticker": "COP",
@@ -462,10 +462,23 @@
         "boughtShares": 28,
         "reason": "META down -8.64% (trigger: -7%)",
         "profitLoss": -673.8
+      },
+      {
+        "date": "2026-03-24T21:49:51.654358",
+        "dateString": "2026-03-24 21:49:51",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "MSFT",
+        "soldPrice": 372.74,
+        "soldShares": 21,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 290.44,
+        "boughtShares": 26,
+        "reason": "MSFT down -7.12% (trigger: -7%)",
+        "profitLoss": -600.18
       }
     ],
     "wins": 0,
-    "losses": 12,
+    "losses": 13,
     "resets": 0
   },
   "aggressive": {
@@ -477,9 +490,9 @@
     "strategy": "Sell at -5%",
     "holdings": [
       {
-        "ticker": "MSFT",
-        "entry": 401.32,
-        "shares": 19
+        "ticker": "AMZN",
+        "entry": 207.24,
+        "shares": 34
       },
       {
         "ticker": "PM",
@@ -722,10 +735,23 @@
         "boughtShares": 25,
         "reason": "AAPL down -6.03% (trigger: -5%)",
         "profitLoss": -497.86
+      },
+      {
+        "date": "2026-03-24T21:49:51.654417",
+        "dateString": "2026-03-24 21:49:51",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "MSFT",
+        "soldPrice": 372.74,
+        "soldShares": 19,
+        "boughtTicker": "AMZN",
+        "boughtPrice": 207.24,
+        "boughtShares": 34,
+        "reason": "MSFT down -7.12% (trigger: -5%)",
+        "profitLoss": -543.02
       }
     ],
     "wins": 0,
-    "losses": 15,
+    "losses": 16,
     "resets": 0
   }
 }
