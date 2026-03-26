@@ -141,9 +141,9 @@
         "shares": 40
       },
       {
-        "ticker": "META",
-        "entry": 612.96,
-        "shares": 14
+        "ticker": "AMZN",
+        "entry": 207.54,
+        "shares": 36
       },
       {
         "ticker": "NVDA",
@@ -241,10 +241,23 @@
         "boughtShares": 35,
         "reason": "GOOGL down -10.37% (trigger: -10%)",
         "profitLoss": -863.0
+      },
+      {
+        "date": "2026-03-26T21:43:25.740787",
+        "dateString": "2026-03-26 21:43:25",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "META",
+        "soldPrice": 547.54,
+        "soldShares": 14,
+        "boughtTicker": "AMZN",
+        "boughtPrice": 207.54,
+        "boughtShares": 36,
+        "reason": "META down -10.67% (trigger: -10%)",
+        "profitLoss": -915.88
       }
     ],
     "wins": 0,
-    "losses": 5,
+    "losses": 6,
     "resets": 0
   },
   "moderate": {
@@ -256,9 +269,9 @@
     "strategy": "Sell at -7%",
     "holdings": [
       {
-        "ticker": "META",
-        "entry": 606.7,
-        "shares": 13
+        "ticker": "GOOGL",
+        "entry": 280.92,
+        "shares": 25
       },
       {
         "ticker": "PM",
@@ -475,10 +488,23 @@
         "boughtShares": 26,
         "reason": "MSFT down -7.12% (trigger: -7%)",
         "profitLoss": -600.18
+      },
+      {
+        "date": "2026-03-26T21:43:25.740840",
+        "dateString": "2026-03-26 21:43:25",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "META",
+        "soldPrice": 547.54,
+        "soldShares": 13,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 280.92,
+        "boughtShares": 25,
+        "reason": "META down -9.75% (trigger: -7%)",
+        "profitLoss": -769.08
       }
     ],
     "wins": 0,
-    "losses": 13,
+    "losses": 14,
     "resets": 0
   },
   "aggressive": {
@@ -500,9 +526,9 @@
         "shares": 61
       },
       {
-        "ticker": "META",
-        "entry": 594.89,
-        "shares": 12
+        "ticker": "MSFT",
+        "entry": 365.97,
+        "shares": 17
       },
       {
         "ticker": "MSFT",
@@ -761,10 +787,23 @@
         "boughtShares": 12,
         "reason": "GOOGL down -5.85% (trigger: -5%)",
         "profitLoss": -451.75
+      },
+      {
+        "date": "2026-03-26T21:43:25.740871",
+        "dateString": "2026-03-26 21:43:25",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "META",
+        "soldPrice": 547.54,
+        "soldShares": 12,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 365.97,
+        "boughtShares": 17,
+        "reason": "META down -7.96% (trigger: -5%)",
+        "profitLoss": -568.2
       }
     ],
     "wins": 0,
-    "losses": 17,
+    "losses": 18,
     "resets": 0
   }
 }
