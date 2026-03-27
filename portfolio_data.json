@@ -531,9 +531,9 @@
         "shares": 17
       },
       {
-        "ticker": "MSFT",
-        "entry": 401.14,
-        "shares": 20
+        "ticker": "AMZN",
+        "entry": 199.34,
+        "shares": 35
       },
       {
         "ticker": "GOOGL",
@@ -800,10 +800,23 @@
         "boughtShares": 17,
         "reason": "META down -7.96% (trigger: -5%)",
         "profitLoss": -568.2
+      },
+      {
+        "date": "2026-03-27T21:49:17.006104",
+        "dateString": "2026-03-27 21:49:17",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "MSFT",
+        "soldPrice": 356.77,
+        "soldShares": 20,
+        "boughtTicker": "AMZN",
+        "boughtPrice": 199.34,
+        "boughtShares": 35,
+        "reason": "MSFT down -11.06% (trigger: -5%)",
+        "profitLoss": -887.4
       }
     ],
     "wins": 0,
-    "losses": 18,
+    "losses": 19,
     "resets": 0
   }
 }
