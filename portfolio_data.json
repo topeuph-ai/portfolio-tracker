@@ -146,9 +146,9 @@
         "shares": 36
       },
       {
-        "ticker": "NVDA",
-        "entry": 184.86,
-        "shares": 54
+        "ticker": "GOOGL",
+        "entry": 273.5,
+        "shares": 32
       },
       {
         "ticker": "COP",
@@ -254,10 +254,23 @@
         "boughtShares": 36,
         "reason": "META down -10.67% (trigger: -10%)",
         "profitLoss": -915.88
+      },
+      {
+        "date": "2026-03-30T21:54:21.507965",
+        "dateString": "2026-03-30 21:54:21",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "NVDA",
+        "soldPrice": 165.17,
+        "soldShares": 54,
+        "boughtTicker": "GOOGL",
+        "boughtPrice": 273.5,
+        "boughtShares": 32,
+        "reason": "NVDA down -10.65% (trigger: -10%)",
+        "profitLoss": -1063.26
       }
     ],
     "wins": 0,
-    "losses": 6,
+    "losses": 7,
     "resets": 0
   },
   "moderate": {
