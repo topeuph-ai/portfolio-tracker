@@ -534,9 +534,9 @@
         "shares": 34
       },
       {
-        "ticker": "PM",
-        "entry": 162.61,
-        "shares": 61
+        "ticker": "AAPL",
+        "entry": 266.17,
+        "shares": 35
       },
       {
         "ticker": "MSFT",
@@ -852,10 +852,23 @@
         "boughtShares": 25,
         "reason": "GOOGL down -11.76% (trigger: -5%)",
         "profitLoss": -840.88
+      },
+      {
+        "date": "2026-04-21T21:56:13.232538",
+        "dateString": "2026-04-21 21:56:13",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "PM",
+        "soldPrice": 153.25,
+        "soldShares": 61,
+        "boughtTicker": "AAPL",
+        "boughtPrice": 266.17,
+        "boughtShares": 35,
+        "reason": "PM down -5.76% (trigger: -5%)",
+        "profitLoss": -570.96
       }
     ],
     "wins": 0,
-    "losses": 21,
+    "losses": 22,
     "resets": 0
   }
 }
