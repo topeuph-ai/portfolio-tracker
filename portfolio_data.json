@@ -559,9 +559,9 @@
         "shares": 102
       },
       {
-        "ticker": "PFE",
-        "entry": 25.48,
-        "shares": 392
+        "ticker": "META",
+        "entry": 557.67,
+        "shares": 16
       },
       {
         "ticker": "TGT",
@@ -865,10 +865,23 @@
         "boughtShares": 35,
         "reason": "PM down -5.76% (trigger: -5%)",
         "profitLoss": -570.96
+      },
+      {
+        "date": "2026-06-24T21:39:24.434791",
+        "dateString": "2026-06-24 21:39:24",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "PFE",
+        "soldPrice": 24.04,
+        "soldShares": 392,
+        "boughtTicker": "META",
+        "boughtPrice": 557.67,
+        "boughtShares": 16,
+        "reason": "PFE down -5.65% (trigger: -5%)",
+        "profitLoss": -564.48
       }
     ],
     "wins": 0,
-    "losses": 22,
+    "losses": 23,
     "resets": 0
   }
 }
