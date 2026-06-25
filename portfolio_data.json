@@ -171,9 +171,9 @@
         "shares": 173
       },
       {
-        "ticker": "MSFT",
-        "entry": 392.74,
-        "shares": 22
+        "ticker": "META",
+        "entry": 542.87,
+        "shares": 14
       }
     ],
     "trades": [
@@ -267,10 +267,23 @@
         "boughtShares": 32,
         "reason": "NVDA down -10.65% (trigger: -10%)",
         "profitLoss": -1063.26
+      },
+      {
+        "date": "2026-06-25T21:41:46.678286",
+        "dateString": "2026-06-25 21:41:46",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "MSFT",
+        "soldPrice": 352.83,
+        "soldShares": 22,
+        "boughtTicker": "META",
+        "boughtPrice": 542.87,
+        "boughtShares": 14,
+        "reason": "MSFT down -10.16% (trigger: -10%)",
+        "profitLoss": -878.02
       }
     ],
     "wins": 0,
-    "losses": 7,
+    "losses": 8,
     "resets": 0
   },
   "moderate": {
@@ -312,9 +325,9 @@
         "shares": 102
       },
       {
-        "ticker": "PFE",
-        "entry": 25.48,
-        "shares": 392
+        "ticker": "AAPL",
+        "entry": 275.15,
+        "shares": 33
       },
       {
         "ticker": "TGT",
@@ -514,10 +527,23 @@
         "boughtShares": 25,
         "reason": "META down -9.75% (trigger: -7%)",
         "profitLoss": -769.08
+      },
+      {
+        "date": "2026-06-25T21:41:46.678355",
+        "dateString": "2026-06-25 21:41:46",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "PFE",
+        "soldPrice": 23.67,
+        "soldShares": 392,
+        "boughtTicker": "AAPL",
+        "boughtPrice": 275.15,
+        "boughtShares": 33,
+        "reason": "PFE down -7.10% (trigger: -7%)",
+        "profitLoss": -709.52
       }
     ],
     "wins": 0,
-    "losses": 14,
+    "losses": 15,
     "resets": 0
   },
   "aggressive": {
