@@ -315,9 +315,9 @@
         "shares": 28
       },
       {
-        "ticker": "GOOGL",
-        "entry": 290.44,
-        "shares": 26
+        "ticker": "MSFT",
+        "entry": 484.52,
+        "shares": 14
       },
       {
         "ticker": "COP",
@@ -540,10 +540,23 @@
         "boughtShares": 33,
         "reason": "PFE down -7.10% (trigger: -7%)",
         "profitLoss": -709.52
+      },
+      {
+        "date": "2026-11-20T21:12:33.774024",
+        "dateString": "2026-11-20 21:12:33",
+        "action": "AUTONOMOUS TRADE",
+        "soldTicker": "GOOGL",
+        "soldPrice": 265.29,
+        "soldShares": 26,
+        "boughtTicker": "MSFT",
+        "boughtPrice": 484.52,
+        "boughtShares": 14,
+        "reason": "GOOGL down -8.66% (trigger: -7%)",
+        "profitLoss": -653.9
       }
     ],
     "wins": 0,
-    "losses": 15,
+    "losses": 16,
     "resets": 0
   },
   "aggressive": {
